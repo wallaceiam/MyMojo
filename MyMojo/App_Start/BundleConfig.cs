@@ -21,10 +21,14 @@ namespace MyMojo
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/wow.js",
+                      "~/Scripts/Site.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/font-awesome.css",
+                      "~/Content/animate.css",
                       "~/Content/site.css"));
         }
     }
