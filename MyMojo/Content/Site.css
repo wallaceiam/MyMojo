@@ -10,8 +10,8 @@
 /* ======= Base ======= */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #545E6C;
-  background: #f5f5f5;
+  color: #2C3E50;
+  background: #ECF0F1;
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ p {
   line-height: 1.5;
 }
 .wrapper {
-  background: #4B6A78;
+  background: #3498DB;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
@@ -52,7 +52,7 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .sidebar-wrapper {
-  background: #4B6A78;
+  background: #3498DB;
   position: absolute;
   right: 0;
   width: 240px;
@@ -65,7 +65,7 @@ p {
 }
 .sidebar-wrapper .profile-container {
   padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
+  background-color: #2980B9;
   text-align: center;
   color: #fff;
 }
@@ -193,6 +193,9 @@ p {
 .main-wrapper .experiences-section .item {
   margin-bottom: 30px;
 }
+.main-wrapper .experiences-section .item .details ul {
+    font-size: 13px;
+}
 .main-wrapper .upper-row {
   position: relative;
   overflow: hidden;
@@ -238,11 +241,11 @@ p {
 }
 .skillset .level-bar {
   height: 12px;
-  background: #f5f5f5;
+  background: #ECF0F1;
 }
 .skillset .level-bar-inner {
   height: 12px;
-  background: #6c92a3;
+  background: #3498DB;
 }
 .footer {
   padding: 30px;
@@ -250,12 +253,53 @@ p {
 }
 .footer .copyright {
   line-height: 1.6;
-  color: #545E6C;
+  color: #2C3E50;
   font-size: 13px;
 }
 .footer .fa-heart {
   color: #fb866a;
 }
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(40, 127, 184);
+    background: rgba(40, 127, 184, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(40, 127, 184, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .sidebar-wrapper {
