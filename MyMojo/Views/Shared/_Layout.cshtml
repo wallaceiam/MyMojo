@@ -38,11 +38,25 @@
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: chris@mymojo.ca">chris@mymojo.ca</a></li>
                     <li class="phone"><i class="fa fa-phone"></i><a href="tel:07514816588">007514816588</a></li>
                     <li class="website"><i class="fa fa-globe"></i><a href="http://mymojo.ca">mymojo.ca</a></li>
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="http://www.linkedin.com/in/chris-wallace" target="_blank">linkedin.com/in/chris-wallace</a></li>
-                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/wallaceiam" target="_blank">github.com/wallaceiam</a></li>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="http://www.linkedin.com/in/chris-wallace" target="_blank">chris-wallace</a></li>
+                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/wallaceiam" target="_blank">wallaceiam</a></li>
                     @*<li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/wallaceiam" target="_blank">@@wallaceiam</a></li>*@
                 </ul>
             </div><!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Certifications</h2>
+                <div class="item">
+                    <h4 class="degree">Microsoft 70-315</h4>
+                    <h5 class="meta">Developing and Implementing Web Applications with Microsoft Visual C# .NET and Microsoft Visual Studio .NET</h5>
+                    <div class="time">2005</div>
+                </div><!--//item-->
+                <div class="item">
+                    <h4 class="degree">Microsoft 70-316</h4>
+                    <h5 class="meta">Developing and Implementing Windows-based Applications with Microsoft Visual C# .NET and Microsoft Visual Studio .NET</h5>
+                    <div class="time">2005</div>
+                </div><!--//item-->
+            </div><!--//certifications-->
+
             <div class="education-container container-block">
                 <h2 class="container-block-title">Education</h2>
                 <div class="item">
@@ -57,19 +71,7 @@
                 </div><!--//item-->
             </div><!--//education-container-->
 
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Certifications</h2>
-                <div class="item">
-                    <h4 class="degree">Microsoft 70-315</h4>
-                    <h5 class="meta">Developing and Implementing Web Applications with Microsoft Visual C# .NET and Microsoft Visual Studio .NET</h5>
-                    <div class="time">2005</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">Microsoft 70-316</h4>
-                    <h5 class="meta">Developing and Implementing Windows-based Applications with Microsoft Visual C# .NET and Microsoft Visual Studio .NET</h5>
-                    <div class="time">2005</div>
-                </div><!--//item-->
-            </div><!--//certifications-->
+
 
             <div class="interests-container container-block">
                 <h2 class="container-block-title">Interests</h2>
@@ -103,17 +105,21 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-7881966-1', 'auto');
-        ga('send', 'pageview');
+    @{ if (Request.Url.Host != "localhost")
+        {
+            <script>
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    </script>
+                ga('create', 'UA-7881966-1', 'auto');
+                ga('send', 'pageview');
+
+            </script>
+        }}
 </body>
 </html>
