@@ -245,12 +245,18 @@ p {
   margin-bottom: 12px;
 }
 .skillset .level-bar {
-  height: 12px;
+  height: 18px;
   background: #ECF0F1;
 }
 .skillset .level-bar-inner {
-  height: 12px;
+  height: 18px;
   background: #3498DB;
+}
+.skillset .level-bar-inner span {
+    font-size: 8pt;
+    color: #fff;
+    padding-left: 5px;
+    padding-bottom: 2px;
 }
 .footer {
   padding: 30px;
