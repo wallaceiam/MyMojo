@@ -151,7 +151,7 @@
     <Content Include="Content\images\companies\helloU.png" />
     <Content Include="Content\images\companies\livedrive.png" />
     <Content Include="Content\images\companies\wintech.png" />
-    <Content Include="Content\images\profile.jpg" />
+    <Content Include="Content\images\profile.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -164,6 +164,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\CV\Chris Wallace - Curriculum Vitae.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
